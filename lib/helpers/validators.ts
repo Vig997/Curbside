@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { LISTING_ACCESS_INSTRUCTIONS_MAX, LISTING_DESCRIPTION_MAX } from "@/lib/constants";
+import { LISTING_ACCESS_INSTRUCTIONS_MAX, LISTING_DESCRIPTION_MAX } from "@/lib/config/constants";
 
 export const uploadedPhotoSchema = z.object({
   url: z.string().url(),

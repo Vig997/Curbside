@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getBookingById, getCurrentUserProfile } from "@/lib/supabase/queries";
-import { buildNavigationHref, formatCurrency, formatDateRange, formatRevenueBreakdown } from "@/lib/utils";
+import { buildNavigationHref, formatCurrency, formatDateRange, formatRevenueBreakdown } from "@/lib/helpers";
 
 export default async function BookingDetailPage({
   params,

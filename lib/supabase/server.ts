@@ -3,7 +3,7 @@ import type { CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { cache } from "react";
 
-import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/env";
+import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/config/env";
 
 type CookieToSet = {
   name: string;

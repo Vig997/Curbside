@@ -11,7 +11,7 @@ import {
   LISTING_RESERVED_UNPUBLISH_MESSAGE
 } from "@/lib/domain/spot-reservations";
 import { getActiveReservationsForSpotIds, getCurrentUserProfile, getHostBookingsResult, getHostSpotsResult } from "@/lib/supabase/queries";
-import { formatCurrency, formatDateRange, formatBookingDuration, summarizeAvailability } from "@/lib/utils";
+import { formatCurrency, formatDateRange, formatBookingDuration, summarizeAvailability } from "@/lib/helpers";
 
 export default async function HostDashboardPage({
   searchParams

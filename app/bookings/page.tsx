@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCurrentUserProfile, getUserBookingsResult } from "@/lib/supabase/queries";
-import { formatCurrency, formatDateRange } from "@/lib/utils";
+import { formatCurrency, formatDateRange } from "@/lib/helpers";
 
 export const metadata: Metadata = {
   title: "Reservations",

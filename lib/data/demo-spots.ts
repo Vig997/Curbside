@@ -1,4 +1,4 @@
-import type { ParkingSpot } from "@/types";
+import type { ParkingSpot } from "@/lib/types";
 
 // Hard-coded IV/UCSB demo listings used when Supabase is empty or offline.
 const baseDescription =

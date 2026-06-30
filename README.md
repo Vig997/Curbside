@@ -36,15 +36,22 @@ npm run dev
 ## Project structure
 
 ```
-app/           # pages (routes)
-components/    # UI by feature (home, host, booking, etc.)
+app/              # routes and pages
+components/       # UI by feature (home, host, booking, etc.)
+docs/             # setup, testing, secrets, monitoring
 lib/
-  actions/     # server actions
-  data/        # demo spots + cookie bookings
-  domain/      # booking guest helpers, spot ownership
-  supabase/    # client + queries
-supabase/      # SQL schema, migrations, seed data
-types/         # shared TypeScript types
+  actions/        # server actions
+  config/         # env, constants, feature flags
+  data/           # demo spots + cookie bookings
+  domain/         # booking rules, reservations, ownership
+  helpers/        # formatting, validation, redirects
+  integrations/   # mapbox, geocoding, photo uploads
+  monitoring.ts   # optional Sentry
+  supabase/       # client + queries
+  types/          # shared TypeScript types
+public/           # screenshots and static assets
+scripts/          # dev tooling
+supabase/         # SQL schema, migrations, seed data
 ```
 
 ## Demo vs real listings

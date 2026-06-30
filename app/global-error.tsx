@@ -4,7 +4,8 @@ import { useEffect } from "react";
 
 import "@/app/globals.css";
 
-import { captureError } from "@/lib/monitoring";import { RouteErrorCard } from "@/components/ui/route-error-card";
+import { captureError } from "@/lib/monitoring";
+import { RouteErrorCard } from "@/components/ui/route-error-card";
 
 export default function GlobalError({
   error,

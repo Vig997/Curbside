@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { SpotReservation } from "@/lib/data/demo-bookings";
 import { isDemoSpot, isUserOwnedListing } from "@/lib/domain/spot-ownership";
-import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/utils";
-import { ParkingSpot } from "@/types";
+import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/helpers";
+import { ParkingSpot } from "@/lib/types";
 
 interface SpotCardProps {
   spot: ParkingSpot;

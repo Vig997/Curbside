@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
-import type { GuestContact } from "@/types";
+import type { GuestContact } from "@/lib/types";
 
 type ReservationGuestRow = {
   booking_id: string;

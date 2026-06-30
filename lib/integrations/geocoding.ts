@@ -1,4 +1,4 @@
-import { DEFAULT_MAP_CENTER } from "@/lib/constants";
+import { DEFAULT_MAP_CENTER } from "@/lib/config/constants";
 
 type GeocodeResult = {
   latitude: number;

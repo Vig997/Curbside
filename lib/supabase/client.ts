@@ -1,7 +1,7 @@
 import { createBrowserClient } from "@supabase/ssr";
 import type { SupabaseClient } from "@supabase/supabase-js";
 
-import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/env";
+import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/config/env";
 
 export function createClient(): SupabaseClient | null {
   if (!isSupabaseEnvConfigured()) {

@@ -3,12 +3,12 @@
 import { redirect } from "next/navigation";
 import { revalidatePath, revalidateTag } from "next/cache";
 
-import { deriveProfileName } from "@/lib/profile";
-import { PARKING_SPOT_BUCKET, PUBLISHED_SPOTS_TAG } from "@/lib/constants";
+import { deriveProfileName } from "@/lib/helpers/profile";
+import { PARKING_SPOT_BUCKET, PUBLISHED_SPOTS_TAG } from "@/lib/config/constants";
 import { isListingCurrentlyReserved } from "@/lib/domain/spot-reservations";
-import { photosOwnedByUser } from "@/lib/listing-photos";
+import { photosOwnedByUser } from "@/lib/integrations/listing-photos";
 import { createClient } from "@/lib/supabase/server";
-import { listingSchema, uploadedPhotoSchema } from "@/lib/validators";
+import { listingSchema, uploadedPhotoSchema } from "@/lib/helpers/validators";
 
 export interface ListingActionState {
   error: string;

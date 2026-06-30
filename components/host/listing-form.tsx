@@ -14,12 +14,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { LISTING_ACCESS_INSTRUCTIONS_MAX, LISTING_DESCRIPTION_MAX, PARKING_SPOT_BUCKET, SPOT_TYPE_OPTIONS, DEFAULT_MAP_CENTER } from "@/lib/constants";
-import { geocodeAddress } from "@/lib/geocoding";
+import { LISTING_ACCESS_INSTRUCTIONS_MAX, LISTING_DESCRIPTION_MAX, PARKING_SPOT_BUCKET, SPOT_TYPE_OPTIONS, DEFAULT_MAP_CENTER } from "@/lib/config/constants";
+import { geocodeAddress } from "@/lib/integrations/geocoding";
 import { createClient } from "@/lib/supabase/client";
-import { listingSchema, type ListingValues } from "@/lib/validators";
+import { listingSchema, type ListingValues } from "@/lib/helpers/validators";
 import type { ListingActionState } from "@/lib/actions/listings";
-import type { ParkingSpot, UploadedPhotoValue } from "@/types";
+import type { ParkingSpot, UploadedPhotoValue } from "@/lib/types";
 
 const HostPinMap = dynamic(() => import("@/components/host/host-pin-map").then((module) => module.HostPinMap), {
   ssr: false,

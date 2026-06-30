@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 import { Card, CardContent } from "@/components/ui/card";
-import type { MapSpotSummary } from "@/types";
+import type { MapSpotSummary } from "@/lib/types";
 import type { SpotReservation } from "@/lib/data/demo-bookings";
 
 const ParkingMap = dynamic(() => import("@/components/home/parking-map"), {

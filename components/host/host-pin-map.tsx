@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef } from "react";
 import Map, { Marker, NavigationControl, type MapMouseEvent, type MapRef } from "react-map-gl/mapbox";
 import { MapPin } from "lucide-react";
 
-import { DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, MAPBOX_STYLE } from "@/lib/constants";
+import { DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, MAPBOX_STYLE } from "@/lib/config/constants";
 
 interface HostPinMapProps {
   latitude: number;

@@ -6,9 +6,9 @@ import { ArrowRight, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { SPOT_TYPE_OPTIONS } from "@/lib/constants";
-import { cn } from "@/lib/utils";
-import { SpotFilters } from "@/types";
+import { SPOT_TYPE_OPTIONS } from "@/lib/config/constants";
+import { cn } from "@/lib/helpers";
+import { SpotFilters } from "@/lib/types";
 
 interface FilterBarProps {
   filters: SpotFilters;

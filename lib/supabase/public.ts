@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/env";
+import { getSupabaseEnv, isSupabaseEnvConfigured } from "@/lib/config/env";
 
 /** Read-only Supabase client for public data — no cookies, safe to cache. */
 export function getPublicSupabase() {

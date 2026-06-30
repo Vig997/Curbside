@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCurrentUserProfile, getParkingSpotById } from "@/lib/supabase/queries";
-import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/utils";
+import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/helpers";
 
 export default async function HostListingDetailPage({
   params

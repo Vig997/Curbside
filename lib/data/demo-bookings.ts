@@ -14,7 +14,7 @@ import {
 import { getDemoSpotById } from "@/lib/data/demo-spots";
 import { saveReservationGuest } from "@/lib/domain/reservation-guests";
 import { createClient } from "@/lib/supabase/server";
-import type { Booking, GuestContact, Profile } from "@/types";
+import type { Booking, GuestContact, Profile } from "@/lib/types";
 
 const MOCK_BOOKINGS_COOKIE = "mock_reservations";
 

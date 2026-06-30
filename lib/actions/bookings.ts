@@ -4,7 +4,7 @@ import { PostgrestError } from "@supabase/supabase-js";
 import { redirect } from "next/navigation";
 import { revalidatePath, revalidateTag } from "next/cache";
 
-import { areDemoSpotsEnabled, isDemoFallbackEnabled } from "@/lib/feature-flags";
+import { areDemoSpotsEnabled, isDemoFallbackEnabled } from "@/lib/config/feature-flags";
 import {
   guestContactToPayload,
   isMissingGuestColumnsError,
@@ -14,13 +14,13 @@ import {
 } from "@/lib/domain/booking-guest";
 import { deleteMockBooking, saveMockBooking } from "@/lib/data/demo-bookings";
 import { getOverlappingReservationForSpot } from "@/lib/domain/reservation-overlap";
-import { PUBLISHED_SPOTS_TAG } from "@/lib/constants";
+import { PUBLISHED_SPOTS_TAG } from "@/lib/config/constants";
 import { createClient } from "@/lib/supabase/server";
 import { deleteReservationGuest, saveReservationGuest } from "@/lib/domain/reservation-guests";
 import { getActiveReservationsForSpotIds, getBookingById, getHostBookingById, getParkingSpotById } from "@/lib/supabase/queries";
-import { bookingSchema } from "@/lib/validators";
-import { calculateBookingTotal, isBookingInsideWindow } from "@/lib/utils";
-import type { GuestContact } from "@/types";
+import { bookingSchema } from "@/lib/helpers/validators";
+import { calculateBookingTotal, isBookingInsideWindow } from "@/lib/helpers";
+import type { GuestContact } from "@/lib/types";
 
 export interface ActionState {
   error: string;

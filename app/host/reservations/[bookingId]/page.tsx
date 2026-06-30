@@ -6,7 +6,7 @@ import { DeleteReservationButton } from "@/components/booking/delete-reservation
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCurrentUserProfile, getHostBookingById } from "@/lib/supabase/queries";
-import { formatCurrency, formatDateRange, formatBookingDuration, formatRevenueBreakdown } from "@/lib/utils";
+import { formatCurrency, formatDateRange, formatBookingDuration, formatRevenueBreakdown } from "@/lib/helpers";
 
 function displayGuestField(value: string) {
   const trimmed = value.trim();

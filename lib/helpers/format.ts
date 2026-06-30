@@ -2,7 +2,7 @@ import { type ClassValue, clsx } from "clsx";
 import { format, formatDistanceToNowStrict, isAfter, isBefore, parseISO } from "date-fns";
 import { twMerge } from "tailwind-merge";
 
-import { AvailabilityWindow, SpotType } from "@/types";
+import { AvailabilityWindow, SpotType } from "@/lib/types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));

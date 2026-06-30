@@ -1,4 +1,4 @@
-import type { MapSpotSummary } from "@/types";
+import type { MapSpotSummary } from "@/lib/types";
 
 export function spotsToGeoJson(spots: MapSpotSummary[]) {
   return {

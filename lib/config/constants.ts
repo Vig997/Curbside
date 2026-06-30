@@ -1,4 +1,4 @@
-import { SpotFilters, SpotType } from "@/types";
+import { SpotFilters, SpotType } from "@/lib/types";
 
 export const DEFAULT_FILTERS: SpotFilters = {
   search: "",

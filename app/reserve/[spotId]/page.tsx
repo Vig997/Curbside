@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getCurrentReservationForSpot } from "@/lib/domain/reservation-overlap";
-import { areDemoSpotsEnabled } from "@/lib/feature-flags";
+import { areDemoSpotsEnabled } from "@/lib/config/feature-flags";
 import { getCurrentReservationsForSpotIds, getCurrentUserProfile, getParkingSpotById } from "@/lib/supabase/queries";
-import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/utils";
+import { formatCurrency, formatSpotType, summarizeAvailability } from "@/lib/helpers";
 
 export default async function ReserveSpotPage({
   params

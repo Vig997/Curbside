@@ -4,7 +4,7 @@ import { PlusCircle, UserCircle2 } from "lucide-react";
 import { SignOutButton } from "@/components/auth/sign-out-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/config/constants";
 import { getCurrentUserProfile } from "@/lib/supabase/queries";
 
 const PROTECTED_NAV_HREFS = new Set(["/bookings", "/host"]);

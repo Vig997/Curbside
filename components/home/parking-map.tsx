@@ -14,12 +14,12 @@ import { PriceMarker } from "@/components/home/price-marker";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { fetchParkingSpotDetail } from "@/lib/actions/spots";
-import { DEFAULT_FILTERS, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, LOCATION_PRESETS, MAPBOX_STYLE } from "@/lib/constants";
+import { DEFAULT_FILTERS, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, LOCATION_PRESETS, MAPBOX_STYLE } from "@/lib/config/constants";
 import type { SpotReservation } from "@/lib/data/demo-bookings";
-import { spotsToGeoJson } from "@/lib/mapbox";
+import { spotsToGeoJson } from "@/lib/integrations/mapbox";
 import { isDemoSpot, isUserOwnedListing } from "@/lib/domain/spot-ownership";
-import { formatCurrency, isSpotAvailableNow } from "@/lib/utils";
-import type { MapSpotSummary, ParkingSpot, SpotFilters } from "@/types";
+import { formatCurrency, isSpotAvailableNow } from "@/lib/helpers";
+import type { MapSpotSummary, ParkingSpot, SpotFilters } from "@/lib/types";
 
 const SpotCard = dynamic(
   () => import("@/components/home/spot-card").then((mod) => mod.SpotCard),

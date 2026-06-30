@@ -9,7 +9,7 @@
     "build": "next build",
     "build:clean": "npm run clean && next build",
     "start": "next start",
-    "lint": "eslint app components lib types middleware.ts",
+    "lint": "eslint app components lib middleware.ts instrumentation.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -19,14 +19,14 @@ import {
   getMockBookingsForUser,
   type SpotReservation
 } from "@/lib/data/demo-bookings";
-import { areDemoSpotsEnabled } from "@/lib/feature-flags";
+import { areDemoSpotsEnabled } from "@/lib/config/feature-flags";
 import { demoSpots, getDemoSpotById } from "@/lib/data/demo-spots";
 import { getReservationGuest, getReservationGuestsByBookingIds, mergeGuestContacts } from "@/lib/domain/reservation-guests";
 import { filterCurrentReservations } from "@/lib/domain/reservation-overlap";
 import { isSeedExampleSpot } from "@/lib/domain/spot-ownership";
-import { deriveProfileName } from "@/lib/profile";
-import { PUBLISHED_SPOTS_TAG } from "@/lib/constants";
-import type { AvailabilityWindow, Booking, GuestContact, MapSpotSummary, ParkingSpot, Profile, SpotPhoto, SpotType } from "@/types";
+import { deriveProfileName } from "@/lib/helpers/profile";
+import { PUBLISHED_SPOTS_TAG } from "@/lib/config/constants";
+import type { AvailabilityWindow, Booking, GuestContact, MapSpotSummary, ParkingSpot, Profile, SpotPhoto, SpotType } from "@/lib/types";
 
 type SpotRow = {
   id: string | null;

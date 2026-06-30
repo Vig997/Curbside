@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { sanitizeNextPath } from "@/lib/safe-redirect";
+import { sanitizeNextPath } from "@/lib/helpers/safe-redirect";
 import { getCurrentUserProfile } from "@/lib/supabase/queries";
 
 export const metadata: Metadata = {

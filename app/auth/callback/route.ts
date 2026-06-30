@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-import { deriveProfileName } from "@/lib/profile";
-import { sanitizeNextPath } from "@/lib/safe-redirect";
+import { deriveProfileName } from "@/lib/helpers/profile";
+import { sanitizeNextPath } from "@/lib/helpers/safe-redirect";
 import { createClient } from "@/lib/supabase/server";
 
 export async function GET(request: Request) {

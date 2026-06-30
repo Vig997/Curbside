@@ -1,4 +1,4 @@
-import type { GuestContact, Profile } from "@/types";
+import type { GuestContact, Profile } from "@/lib/types";
 
 type GuestRow = {
   guest_name?: string | null;
