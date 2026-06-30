@@ -1,6 +1,6 @@
 # Manual test checklist
 
-Run through these before pushing to GitHub. Test at `http://localhost:3000`.
+Run through these when validating a release or after big changes. Test at `http://localhost:3000`.
 
 ## Auth
 
